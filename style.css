@@ -85,6 +85,15 @@ body{
     border-radius: 30px;
     margin:10px;
     color:white;
+    border:solid purple 1px;
+}
+
+.category p:hover{
+
+    transition:1s;
+    color:black;
+    background-color: transparent;
+    border:solid purple 1px;
 }
 .sales-image{
     position:relative;
@@ -106,8 +115,23 @@ body{
     position:absolute;
     top:10%; 
     left:10%;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
+@keyframes zoom{
+
+    0%{
+        opacity: 0;
+        transform:scale(0);
+    }
+    100%{
+opacity: 1;
+transform:scale(1);
+    }
+}
 .course_card
 {
     width:300px;
